@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PT bac 2</title>
+</head>
+<body>
+<form>
+    <input type="number" id="nhapa"> X*X +
+    <input type="number" id="nhapb"> X +
+    <input type="number" id="nhapc"> = 0 &nbsp; &nbsp;
+    <button type="button" onclick="kq()">Ket qua</button>
+</form>
+</body>
+</html>
+<script>
+    function kq(){
+        let a = document.getElementById("nhapa").value
+        let b = document.getElementById("nhapb").value
+        let c = document.getElementById("nhapc").value
+    if (a != 0) {
+        let delta = b * b - 4 * a * c
+        if (delta > 0 || delta == 0){
+            let x1 = (-b + Math.SQRT2*delta)/(2*a)
+            let x2 = (-b - Math.SQRT2*delta)/(2*a)
+            alert("x1 =" + x1 + "     " + "x2 =" + x2)}
+        else alert("Pt vo nghiem")
+        }
+
+    else alert("day khong phai pt bac 2")
+
+    }
+</script>
